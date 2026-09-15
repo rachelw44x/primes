@@ -27,4 +27,9 @@ describe("generatePrimes", () => {
     assert.equal(primes.length, 1000);
     assert.equal(primes[999], 7919);
   });
+
+  it("can use a different prime algorithm", () => {
+    const algorithm = () => [2, 3, 5];
+    assert.deepEqual(generatePrimes(3, algorithm), [2, 3, 5]);
+  });
 });
