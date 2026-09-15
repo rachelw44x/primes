@@ -1,0 +1,16 @@
+{
+  "name": "primes",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Multiplication table of the first N prime numbers",
+  "type": "module",
+  "main": "src/cli.js",
+  "scripts": {
+    "start": "node src/cli.js",
+    "test": "node --test",
+    "test:coverage": "node --test --experimental-test-coverage"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
